@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="fdata" onsubmit="event.preventDefault()">
+        UserName: <input type="text" required  name="uname" />
+        Password: <input type="password" required name="pass"> 
+        Email: <input type="email" required name="email"> 
+        city: <input type="text" name="city">
+        moblie: <input type="number" name="mn">
+        <button onclick="addData()">add</button>
+    </form>
+    <button onclick="showData()">show</button>
+    <br/>
+    <div id='show'></div>
+ <script src="pracDemo.js"></script>
+</body>
+</html>
