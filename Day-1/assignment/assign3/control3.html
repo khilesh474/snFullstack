@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Generic Comprehensive exam</h1>
+
+    <script>
+       let SecA=33
+       let SecB=20
+       let SecC=19
+
+    
+    if(SecA>=25){
+	 document.write(`Your SecA is above 50% `)
+    }
+        if(SecB>=15){
+	 document.write(`Your SecB is above 50% `)
+        }
+            if(SecC>=10){
+                document.write(`Your SecC is above 50% `)
+
+            }
+
+    // if(SecA>=25){
+	//  document.write(`Your SecA is above 50% `)
+    //  else if(SecC>=15){
+	//  document.write(`Your SecB is above 50% `)
+    //  elseif(SecC>=10){
+    //             document.write(`Your SecC is above 50% `)
+
+    //         }
+    //     }
+    // }
+        
+    const total = SecA+SecB+SecC;    
+    const per = (total/100)*100;
+    if (per>=65)
+	 document.write(`Your Percentage is ${per}% you pass in the exam `)
+    else
+    document.write(`Your Percentage is ${per}% you fail in the exam `)
+    // </script>
+</body>
+</html>

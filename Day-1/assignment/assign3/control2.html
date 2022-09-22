@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The largest of three numbers</h1>
+
+    <script>
+      let n1 = 444;
+      let n2 = 5000;
+      let n3 = 88;
+
+      // if n1 is greater than both n2 and n3, n1 is the largest
+      if (n1 >= n2 && n1 >= n3) document.write(`${n1} is largest`);
+
+      // if n2 is greater than both n1 and n3, n2 is the largest
+      if (n2 >= n1 && n2 >= n3) document.write(`${n2} is largest`);
+
+      // if n3 is greater than both n1 and n2, n3 is the largest
+      if (n3 >= n1 && n3 >= n2) document.write(`${n3} is largest`);
+    </script>
+  </body>
+</html>
