@@ -1,0 +1,29 @@
+<p>formdemo works!</p>
+
+<form (ngSubmit)="adduser(data)" #data="ngForm">
+    UserName: <input type="text" name="uname" ngModel required #un=ngModel>
+    <div *ngIf="un.errors?.['required']">
+        Name can not be blank
+    </div>
+
+    Password: <input type="text" name="pass" ngModel required pass #ps=ngModel>
+    <div *ngIf="ps.errors?.['pass']">
+        Enter correct Password
+    </div>
+
+    Email: <input type="text" name="email" ngModel required email #em=ngModel>
+    <div *ngIf="em.errors?.['email']">
+        Email must be correct
+    </div>
+
+    <button>Register</button>
+</form>
+
+<ul>
+    <li *ngFor='let data of users'>
+        {{data | json}}
+
+    </li>
+</ul>
+
+<button (click)="loadData()">Load Data</button>
